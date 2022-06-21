@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="row" *ngIf="lanes">
+        <div class="col-2 text-center" style="border: 5px solid black;" *ngFor="let lane of lanes.items; let i = index">
+            <h1 style="font-size: 80px;">{{i+1}}</h1>
+            <div class="vertical-center">
+                <div style="display: block; width: 100%;" class="text-center">
+                    <h1 style="font-size: 300px;">{{lane?.currentScore}}</h1>
+                    <h4 class="text-muted" style="font-size: 80px;">{{lane?.currentOccupant}}</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

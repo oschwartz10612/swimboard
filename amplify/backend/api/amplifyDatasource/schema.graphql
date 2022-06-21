@@ -1,0 +1,5 @@
+type Lane @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  currentOccupant: String
+  currentScore: String
+}

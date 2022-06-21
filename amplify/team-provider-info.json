@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-swimboard-dev-203509-authRole",
+      "UnauthRoleArn": "arn:aws:iam::523663003349:role/amplify-swimboard-dev-203509-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::523663003349:role/amplify-swimboard-dev-203509-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-swimboard-dev-203509-deployment",
+      "UnauthRoleName": "amplify-swimboard-dev-203509-unauthRole",
+      "StackName": "amplify-swimboard-dev-203509",
+      "StackId": "arn:aws:cloudformation:us-east-1:523663003349:stack/amplify-swimboard-dev-203509/01b397c0-f0fa-11ec-976b-129988deb823",
+      "AmplifyAppId": "dogfgf94y9y50"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dogfgf94y9y50",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<div class="container mt-3">
+
+    <ng-container *ngIf="lanes">
+
+
+   <ng-container *ngFor="let lane of lanes.items; let i = index" >
+    <h3>Lane {{i + 1}}</h3>
+    <div class="mb-3">
+        <label  class="form-label">Name</label>
+        <input #name type="email" class="form-control" [value]="lane?.currentOccupant" >
+      </div>
+    <div class="mb-3">
+        <label  class="form-label">Score</label>
+        <input #score type="email" class="form-control" [value]="lane?.currentScore">
+      </div>
+      <button type="submit" class="btn btn-primary mb-3" (click)="makeChange(lane!.id, name.value, score.value, lane!._version)">Submit</button>
+      <hr>
+   </ng-container>
+  
+</ng-container>
+
+
+</div>

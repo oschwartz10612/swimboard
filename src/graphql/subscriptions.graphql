@@ -1,0 +1,37 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateLane {
+  onCreateLane {
+    id
+    currentOccupant
+    currentScore
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateLane {
+  onUpdateLane {
+    id
+    currentOccupant
+    currentScore
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteLane {
+  onDeleteLane {
+    id
+    currentOccupant
+    currentScore
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}

@@ -1,0 +1,46 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateLane(
+  $input: CreateLaneInput!
+  $condition: ModelLaneConditionInput
+) {
+  createLane(input: $input, condition: $condition) {
+    id
+    currentOccupant
+    currentScore
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateLane(
+  $input: UpdateLaneInput!
+  $condition: ModelLaneConditionInput
+) {
+  updateLane(input: $input, condition: $condition) {
+    id
+    currentOccupant
+    currentScore
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteLane(
+  $input: DeleteLaneInput!
+  $condition: ModelLaneConditionInput
+) {
+  deleteLane(input: $input, condition: $condition) {
+    id
+    currentOccupant
+    currentScore
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}

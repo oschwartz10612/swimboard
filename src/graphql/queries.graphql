@@ -1,0 +1,59 @@
+# this is an auto generated file. This will be overwritten
+query SyncLanes(
+  $filter: ModelLaneFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncLanes(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      currentOccupant
+      currentScore
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetLane($id: ID!) {
+  getLane(id: $id) {
+    id
+    currentOccupant
+    currentScore
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListLanes(
+  $filter: ModelLaneFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listLanes(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      currentOccupant
+      currentScore
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
