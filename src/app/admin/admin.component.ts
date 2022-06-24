@@ -16,8 +16,8 @@ export class AdminComponent implements OnInit {
     this.lanes = await this.api.ListLanes();
   }
 
-  async makeChange(id: string, name: string, score: string, version: number) {
-    const res = await this.api.UpdateLane({ id: id, currentOccupant: name, currentScore: score, _version: version});
+  async makeChange(id: string, score: string, version: number) {
+    const res = await this.api.UpdateLane({ id: id, currentScore: score, _version: version});
     //find the lane in the list and update it
     const index = this.lanes.items.findIndex((item) => item?.id === id);
     if (index === -1) {

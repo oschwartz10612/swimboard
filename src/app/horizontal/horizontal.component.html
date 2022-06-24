@@ -1,0 +1,12 @@
+<div style="width: 100%; height: 70px; font-size: 50px; background-color: red;" class="text-center">Unofficial Score
+</div>
+<div class="container-fluid" *ngIf="lanes">
+    <ng-container *ngFor="let lane of lanes.items; let i = index">
+    <div class="row" [style.height]="'calc((100vh - 70px) / '+lanes.items.length" style="border: 5px solid black;">'
+        <div style="display: inline;" #container>
+            <h1 style="display: inline; font-size: 170px;" >{{i+1}}</h1>
+            <h1 style="display: inline; margin-left: 50vw; font-size: 170px;" >{{lane?.currentScore}}</h1>
+        </div>
+    </div>
+</ng-container>
+</div>

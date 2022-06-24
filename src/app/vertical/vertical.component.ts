@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { APIService, ListLanesQuery } from '../API.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-vertical',
+  templateUrl: './vertical.component.html',
+  styleUrls: ['./vertical.component.css']
 })
-export class HomeComponent implements OnInit {
+export class VerticalComponent implements OnInit {
 
   lanes!: ListLanesQuery;
 
